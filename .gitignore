@@ -1,0 +1,7 @@
+
+node_modules/*
+report/*
+.idea/*
+cypress/.DS_Store
+debug.log
+package-lock.json
