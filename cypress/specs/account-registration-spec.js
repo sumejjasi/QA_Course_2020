@@ -22,6 +22,7 @@ context('Account Registration....', () => {
             .verify_validation_message('Passwords are too short.')
 
         // comment to be pushed to remote repository
+        // comment to be pushed to remote repository - Amra Požegija Kičin
     })
 
 });
