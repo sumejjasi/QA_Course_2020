@@ -26,6 +26,7 @@ context('Account Registration....', () => {
         // comment to be pushed to remote repository - Ayman Ali
         // comment to be pushed to remote repository - Ilhana Halilovic
         // comment to be pushed to remote repository - Muhamed Kljajić
+        // comment to be pushed to remote repository - Elmedina Sunje
     })
 
 });
