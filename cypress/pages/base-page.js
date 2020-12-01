@@ -55,6 +55,11 @@ export default class BasePage {
         return this;
     };
 
+    wait_element_to_be_enabled(element) {
+        element().should('be.enabled');
+        return this;
+    };
+
     wait_element_to_be_invisible(element) {
         element().should('not.be.visible');
         return this;

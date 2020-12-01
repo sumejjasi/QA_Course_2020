@@ -20,7 +20,7 @@ context('Account Registration....', () => {
             .enter_values_to_all_input_fields(D.newUser)
             .click_Create_button()
             .verify_validation_message('Passwords are too short.')
-        
+
         // comment to be pushed to remote repository -
         // comment to be pushed to remote repository - Amra Požegija Kičin
         // comment to be pushed to remote repository - Ayman Ali
