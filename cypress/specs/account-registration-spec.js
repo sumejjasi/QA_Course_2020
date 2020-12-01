@@ -34,6 +34,7 @@ context('Account Registration....', () => {
         // comment to be pushed to remote repository - Melisa Žigonja-Peljto
         // comment to be pushed to remote repository - Dzejlana Colic
         // comment to be pushed to remote repository - Mariam Felicity Kyebure
+        // comment to be pushed to remote repository - Manal Elmasry Bratic
     })
 
 });
