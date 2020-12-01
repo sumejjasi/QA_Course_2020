@@ -38,4 +38,13 @@ context('Account Registration....', () => {
     })
     
 
+    it('Verify message for password that is not containing uppercase letters', function () {
+
+        D.newUser.password = 'test1234.'
+        ui.accountRegistrationPage.navigate_to('https://demo.virtocommerce.com/en-US/account/register')
+            .enter_values_to_all_input_fields(D.newUser)
+            .click_Create_button()
+            .verify_validation_message(C.validationMsgs.missingUppercaseInPassword);
+    })
+
 });
