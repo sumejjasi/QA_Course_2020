@@ -21,7 +21,7 @@ context('Account Registration....', () => {
             .click_Create_button()
             .verify_validation_message('Passwords are too short.')
 
-        // comment to be pushed to remote repository
+        // comment to be pushed to remote repository - Sumejja S.I.
     })
 
 });
