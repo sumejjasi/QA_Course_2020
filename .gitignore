@@ -5,3 +5,4 @@ report/*
 cypress/.DS_Store
 debug.log
 package-lock.json
+.DS_Store

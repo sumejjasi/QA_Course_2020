@@ -12,5 +12,5 @@
     "allureResultsPath": "report/allure-results",
     "allure": true
   },
-  "retries" : 1
+  "retries" : 0
 }

@@ -43,6 +43,10 @@ D.newUser = {
     password: 'Test12345.'
 }
 
+D.product = {
+    name: '3DR Solo Quadcopter (No Gimbal)'
+}
+
 
 
 module.exports = D;
