@@ -18,7 +18,8 @@ context('Order Product', () => {
             .choose_shipping_method()
             .click_on_next_step_button() //payment method - nothing to choose on this site, so we proceed
             .click_on_next_step_button() //button for create order
-            .verify_text_is_visible(D.product.name);
+            .verify_text_is_visible(D.product.name)
+            .verify_subtext_is_visible(ui.checkoutPage.get_title(), C.labels.successfulOrder.order)
 
     })
 });

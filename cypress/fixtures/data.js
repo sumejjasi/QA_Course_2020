@@ -44,7 +44,7 @@ D.newUser = {
 }
 
 D.product = {
-    name: '3DR X8-M Octocopter for Visual-Spectrum Aerial Maps (915 MHz)'
+    name: 'DJI Spreading Wings S1000+ Professional Octocopter'
 }
 
 D.shippingData = {

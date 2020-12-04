@@ -13,7 +13,8 @@ let
     zipInput = e => cy.get('#PostalCode'),
     phoneInput = e => cy.get('#Phone'),    // OPTIONAL FILED
     nextStepButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
-    radioButton = e => cy.get('[type="radio"]')
+    radioButton = e => cy.get('[type="radio"]'),
+    successfulOrderTitle = e => cy.get('body > main > div > h4')
 
 
 export default class CheckoutPage extends BasePage {
@@ -59,4 +60,7 @@ export default class CheckoutPage extends BasePage {
     }
 
 
+    get_title() {
+        return successfulOrderTitle();
+    }
 }
