@@ -47,6 +47,12 @@ D.product = {
     name: '3DR Solo Quadcopter (No Gimbal)'
 }
 
-
+D.shippingData = {
+    firstName: 'TestFirst',
+    lastName : 'TestL',
+    address: D.getRandomString(5),
+    city: 'Sarajevo',
+    zipCode: '71000'
+}
 
 module.exports = D;

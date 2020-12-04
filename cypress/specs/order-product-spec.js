@@ -12,6 +12,13 @@ context('Order Product', () => {
         ui.productDetails.click_Add_To_Cart_button()
             .click_Go_To_Cart_button()
         ui.cart.click_Checkout()
+        ui.checkoutPage.enter_email(D.newUser.email)
+            .enter_Shipping_data(D.shippingData)
+            .click_on_next_step_button()
+            .choose_shipping_method()
+            .click_on_next_step_button() //payment method - nothing to choose on this site, so we proceed
+            .click_on_next_step_button() //button for create order
+            .verify_text_is_visible(D.product.name);
 
     })
 });
