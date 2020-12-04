@@ -44,7 +44,7 @@ D.newUser = {
 }
 
 D.product = {
-    name: '3DR Solo Quadcopter (No Gimbal)'
+    name: '3DR X8-M Octocopter for Visual-Spectrum Aerial Maps (915 MHz)'
 }
 
 D.shippingData = {
