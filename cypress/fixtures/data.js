@@ -44,7 +44,7 @@ D.newUser = {
 }
 
 D.product = {
-    name: 'DJI Spreading Wings S1000+ Professional Octocopter'
+    name: 'ASUS ZenFone 2 ZE551ML 16GB Smartphone'
 }
 
 D.shippingData = {
