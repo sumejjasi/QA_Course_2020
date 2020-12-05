@@ -2,13 +2,14 @@ import BasePage from "./base-page";
 
 // *************************** ELEMENTS ***************************
 let
-    usernameInput = e => cy.get('#SpecificElementId'),
-    passwordInput = e => cy.get('.specificElementClass'),
-    testField = e => cy.get('[attributeName="attributeValue"]'),
-    firstNameInput = e => cy.get('#first_name'),
-    lastNameInput = e => cy.get('#last_name'),
-    emailInput = e => cy.get('#email')
- // add comma on the previous line before adding new element selectors
+    createAccountButton = e => cy.get('[id="customer_register_link"]'),
+    firstNameInput = e => cy.get('[id="first_name"]'),
+    lastNameInput = e => cy.get('[id="last_name"]'),
+    emailInput = e => cy.get('[id="email"]'),
+    usernameInput = e => cy.get('[id="user_name"]'),
+    passwordInput = e => cy.get('[id="create_password"]'),
+    createButton = e => cy.get('[value="Create"]')
+
 
 export default class AccountProfilePage extends BasePage {
 
@@ -18,20 +19,16 @@ export default class AccountProfilePage extends BasePage {
 
     // *************************** ACTIONS ***************************
 
+ verify_labels_upon_succesful_registration(dataObject) {
+    this.verify_text_is_visible('My Account')
+    this.verify_text_is_visible('Edit Profile')
 
-    // DOM - HTML Structure  - referring to the elements shown in the developer console
+    this.verify_value(firstNameInput, dataObject.firstName)
+    //firstNameInput().invoke('val').should('contain', value);
 
-    verify_labels_upon_succesful_registration(dataObject) {
-        this.verify_text_is_visible('My Account')
-        this.verify_text_is_visible('Edit Profile')
+    this.verify_value(emailInput, dataObject.email)
 
-        // used only for verifying 'typed text' into 'input' fields
-        // make sure to skip () after the element sector that you pass
-        this.verify_value(firstNameInput, dataObject.firstName)
-        //firstNameInput().invoke('val').should('contain', value);
 
-        this.verify_value(emailInput, dataObject.email)
-
-        return this;
-    }
+    return this;
+}
 }

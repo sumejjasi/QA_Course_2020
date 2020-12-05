@@ -4,7 +4,7 @@ import BasePage from "./base-page";
 let
     checkoutButton = e => cy.get('[ng-click="submitCart()"]')
 
-export default class CartPage extends BasePage {
+ export default class CartPage extends BasePage {
 
     constructor() {
         super()
@@ -13,7 +13,8 @@ export default class CartPage extends BasePage {
     // *************************** ACTIONS ***************************
 
     click_Checkout() {
-       checkoutButton().click()
+        this.wait_element_to_be_visible(checkoutButton)
+        checkoutButton().click()
         return this;
     }
 }

@@ -34,19 +34,22 @@ D.getNewProductData = function(){
     }
 };
 
-// object with properties
+//object with properties
+
 D.newUser = {
     firstName: 'TestFirst',
-    lastName : 'TestL',
+    lastName: 'TestLast',
     username: D.getRandomString(5),
     email: D.getRandomEmail(),
-    password: 'Test12345.'
-}
+    password: 'Test12345.',
+    address: 'Franca Lehara bb',
+    city: 'Sarajevo',
+    zipCode: '71000'
+};
 
 D.product = {
-    name: '3DR Solo Quadcopter (No Gimbal)'
-}
-
-
+    name: 'DJI Phantom 3 Professional Quadcopter with 4K Camera and 3-Axis Gimbal',
+    name2: '3DR Solo Quadcopter (No Gimbal)'
+};
 
 module.exports = D;

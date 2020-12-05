@@ -2,8 +2,9 @@ import BasePage from "./base-page";
 
 // *************************** ELEMENTS ***************************
 let
-    addToCardButton = e => cy.get('#addToCart'),
-    goToCardButton = e => cy.get('[ng-click="redirect(\'/en-US/cart\')"]')
+    addToCartButton = e => cy.get('[id="addToCart"]'),
+    goToCartButton = e => cy.get('[ng-click="redirect(\'/en-US/cart\')"]')
+
  // add comma on the previous line before adding new element selectors
 
 export default class ProductDetailsPage extends BasePage {
@@ -14,15 +15,15 @@ export default class ProductDetailsPage extends BasePage {
 
     // *************************** ACTIONS ***************************
 
-    click_Add_To_Cart_button() {
-        this.wait_element_to_be_enabled(addToCardButton)
-        addToCardButton().click()
+    click_Add_To_Cart_Button () {
+        this.wait_element_to_be_enabled(addToCartButton)
+        addToCartButton().click()
         return this;
     }
 
-    click_Go_To_Cart_button() {
-        this.wait_element_to_be_enabled(goToCardButton)
-        goToCardButton().click();
+    click_Go_To_Cart_Button () {
+        this.wait_element_to_be_enabled(goToCartButton)
+        goToCartButton().click()
         return this;
     }
 }
