@@ -4,7 +4,7 @@ D.uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()
 D.randomNumber = Math.floor(10000 * Math.random() + 1).toString();
 
 D.getUUID = function () {
-    let uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()).toString(16));
+   let uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()).toString(16));
     return uuid;
 };
 
@@ -22,6 +22,11 @@ D.getNewRandomNumber = function () {
     return randomNo;
 };
 
+D.getRandomEmail = function () {
+    let randomEmail = D.getRandomString(5) + '@gmail.com'
+    return randomEmail;
+};
+
 D.getNewProductData = function(){
     return D.newProduct = {
         SKU : D.getRandomString(10),
@@ -29,33 +34,19 @@ D.getNewProductData = function(){
     }
 };
 
+// object with properties
 D.newUser = {
-    firstName: 'AA',
-    lastName: 'BB',
-    email: D.getRandomString(5) + '@gmail.com',
-    userName: D.getRandomString(5),
-    password: 'Test123.'
-
+    firstName: 'TestFirst',
+    lastName : 'TestL',
+    username: D.getRandomString(5),
+    email: D.getRandomEmail(),
+    password: 'Test12345.'
 }
-
-D.getRandomEmail = function () {
-    let randomEmail = D.getRandomString(5) + '@gmail.com'
-    return randomEmail;
-};
 
 D.product = {
-    name: 'DJI Spreading Wings S1000+ Professional Octocopter'
+    name: '3DR Solo Quadcopter (No Gimbal)'
 }
 
-D.customerInformation = {
-    email: D.getRandomString(5) + '@gmail.com',
-    firstName: 'GG',
-    lastName: 'FF',
-    company: 'jfks',
-    address: 'kdjfk',
-    city: 'sa',
-    zip: 'fkjd',
-    phone: '987567',
-}
+
 
 module.exports = D;
