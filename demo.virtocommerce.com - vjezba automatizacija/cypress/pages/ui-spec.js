@@ -26,4 +26,3 @@ module.exports = {
     checkout :checkout,
     succesfullyorderedproduct : succesfullyorderedproduct
 }
-

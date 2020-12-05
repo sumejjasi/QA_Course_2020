@@ -9,7 +9,7 @@ let
     emailInput = e => cy.get('#email'),
     phoneNumberInput = e => cy.get('#PhoneNumber')
 
-// add comma on the previous line before adding new element selectors
+ // add comma on the previous line before adding new element selectors
 
 export default class AccountProfilePage extends BasePage {
 
@@ -42,5 +42,3 @@ export default class AccountProfilePage extends BasePage {
         return this;
     }
 }
-
-

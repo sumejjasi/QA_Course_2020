@@ -6,7 +6,7 @@ let
     passwordInput = e => cy.get('.specificElementClass'),
     addToCart = e => cy.get('#addToCart'),
     goToCart = e => cy.get('[ng-click="redirect(\'/en-US/cart\')"]')
-// add comma on the previous line before adding new element selectors
+ // add comma on the previous line before adding new element selectors
 
 export default class ProductDetailsPage extends BasePage {
 
@@ -22,8 +22,11 @@ export default class ProductDetailsPage extends BasePage {
         return this;
     }
 
-    //verify_labels_upon_successful_add_to_cart () {
-        //this.verify_text_is_visible ('Product is added to cart')
+verify_labels_upon_successful_add_to_cart () {
+    this.verify_text_is_visible ('Product is added to cart')
+
+}
+
 
 
 
@@ -33,4 +36,3 @@ export default class ProductDetailsPage extends BasePage {
         return this;
     }
 }
-
