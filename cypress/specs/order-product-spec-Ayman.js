@@ -14,6 +14,7 @@ context('Order product Ayman', () => {
     ui.cartPage.click_checkout_button()
     ui.checkoutPage.navigate_to('https://demo.virtocommerce.com/en-US/cart/checkout')
         .enter_information()
-        .click('ng-model="$ctrl.address.countryCode"')
+        .clicking_shipping_button()
+
     })
 });

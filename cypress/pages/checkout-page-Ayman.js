@@ -9,8 +9,10 @@ let
     addressInput = e => cy.get('[id="Line1"]'),
     accommodationInput = e => cy.get('[id="Line2"]'),
     cityInput = e => cy.get('[id="City"]'),
-    countryInput = e => cy.get('[ng-model="$ctrl.address.countryCode"]')
-    //choosingCountry = e => cy.get('[value="string:BIH"]')
+    countryInput = e => cy.get('[name="Country"]'),
+    postalInput = e => cy.get('[id="PostalCode"]'),
+    phoneInput = e => cy.get('[id="Phone"]'),
+    shippingButton = e => cy.get('[name="button"]')
 
 
 
@@ -30,9 +32,14 @@ export default class checkoutPageAyman extends BasePage {
         addressInput().type('Every where');
         accommodationInput().type('Villa');
         cityInput().type('Visoko');
-        countryInput().select('BIH');
-        //choosingCountry().select('BIH');
+        countryInput().select("string:BIH");
+        postalInput().type('71300');
+        phoneInput().type('062464112');
 
+        return this;
+    }
+    clicking_shipping_button() {
+        shippingButton().click()
         return this;
     }
 
