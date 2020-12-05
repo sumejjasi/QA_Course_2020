@@ -13,7 +13,8 @@ let
     zipInput = e => cy.get('#PostalCode'),
     phoneInput = e => cy.get('#Phone'),    // OPTIONAL FILED
     nextStepButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
-    radioButton = e => cy.get('[type="radio"]'),
+   // radioButton = e => cy.get('[type="radio"]'),
+    radioButton = e => cy.get('[id="FixedRate:Ground"]'),
     successfulOrderTitle = e => cy.get('body > main > div > h4')
 
 
@@ -55,12 +56,17 @@ export default class CheckoutPage extends BasePage {
 
     choose_shipping_method(){
 
-        radioButton().first().check();
+       // radioButton().first().click();
+        radioButton().click();
         return this;
     }
 
 
     get_title() {
         return successfulOrderTitle();
+    }
+
+    verify_subtext(text) {
+       this.verify_text(successfulOrderTitle, text)
     }
 }
