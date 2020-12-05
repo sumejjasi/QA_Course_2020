@@ -6,3 +6,4 @@ cypress/.DS_Store
 debug.log
 package-lock.json
 .DS_Store
+cypress/logs/failed-order-product-spec-r-3-order-product-verify-that-user-can-add-product-to-cart-checkout-and-complete-the-order.json

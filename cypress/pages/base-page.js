@@ -40,6 +40,11 @@ export default class BasePage {
         return this;
     }
 
+     verify_subtext_is_visible(element, subtext) {
+        element.should('contain', subtext);
+        return this;
+    }
+
     verify_text(element, value) {
         element().should('contain', value);
         return this;

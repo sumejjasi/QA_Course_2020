@@ -5,6 +5,7 @@ import AccountRegistrationPage from "./account-registration-page";
 import AccountProfilePage from "./account-profile-page";
 import ProductDetailsPage from "./product-details-page";
 import CartPage from "./cart-page";
+import CheckoutPage from "./checkout-page";
 
 let app = new BasePage();
 let pageTemplate = new PageTemplate();
@@ -13,6 +14,7 @@ let accountRegistrationPage = new AccountRegistrationPage()
 let accountProfile = new AccountProfilePage()
 let productDetails = new ProductDetailsPage()
 let cart = new CartPage()
+let checkoutPage = new CheckoutPage()
 
 module.exports = {
     app : app,
@@ -22,4 +24,5 @@ module.exports = {
     accountProfile : accountProfile,
     productDetails : productDetails,
     cart : cart,
+    checkoutPage : checkoutPage
 }
