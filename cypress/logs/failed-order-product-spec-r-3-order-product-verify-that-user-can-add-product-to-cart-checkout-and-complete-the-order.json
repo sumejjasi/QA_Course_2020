@@ -4,21 +4,8 @@
   "suiteName": "Order Product",
   "testId": "r3",
   "testName": "Order Product Verify that user can add product to cart, checkout and complete the order",
-  "testError": "`cy.click()` can only be called on a single element. Your subject contained 8 elements. Pass `{ multiple: true }` if you want to serially click each element.",
+  "testError": "Timed out after waiting `15000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `15000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `D:\\Users\\Ayman\\Documents\\GitHub\\QA_Course_2020\\cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
   "testCommands": [
-    "visit https://demo.virtocommerce.com/",
-    "findByText 3DR Solo Quadcopter (No Gimbal)",
-    "assert expected **<p>** to be **visible**",
-    "findByText 3DR Solo Quadcopter (No Gimbal)",
-    "click ",
-    "page load --waiting for new page to load--",
-    "xhr  GET https://demo.virtocommerce.com/en-US/themes/localization.json?lang=en",
-    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/account?t=1606849396441",
-    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/cart/itemscount?t=1606849396447",
-    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/marketing/dynamiccontent/BenefitsBanner?t=1606849396450",
-    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/marketing/dynamiccontent/HomePageSlider?t=1606849396450",
-    "new url https://demo.virtocommerce.com/en-US/camcorders/aerial-imaging-drones/3dr-solo-quadcopter-no-gimbal",
-    "get .icon-cart",
-    "click "
+    "visit https://demo.virtocommerce.com/"
   ]
 }
