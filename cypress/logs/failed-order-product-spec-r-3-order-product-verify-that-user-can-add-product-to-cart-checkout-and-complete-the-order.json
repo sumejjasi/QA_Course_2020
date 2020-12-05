@@ -1,0 +1,27 @@
+{
+  "specName": "order-product-spec.js",
+  "title": "Verify that user can add product to cart, checkout and complete the order",
+  "suiteName": "Order Product",
+  "testId": "r3",
+  "testName": "Order Product Verify that user can add product to cart, checkout and complete the order",
+  "testError": "Syntax error, unrecognized expression: ng-click=\"addProductToCart(selectedVariation, 1)",
+  "testCommands": [
+    "visit https://demo.virtocommerce.com/",
+    "visit https://demo.virtocommerce.com/camcorders",
+    "xhr  GET https://demo.virtocommerce.com/en-US/themes/localization.json?lang=en",
+    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/account?t=1607180812703",
+    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/cart/itemscount?t=1607180812708",
+    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/marketing/dynamiccontent/BenefitsBanner?t=1607180812710",
+    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/marketing/dynamiccontent/HomePageSlider?t=1607180812710",
+    "findByText Sony 32GB HDR-PJ540 Full HD Handycam Camcorder with Built-in Projector",
+    "assert expected **<p>** to be **visible**",
+    "findByText Sony 32GB HDR-PJ540 Full HD Handycam Camcorder with Built-in Projector",
+    "click ",
+    "xhr  GET https://demo.virtocommerce.com/en-US/themes/localization.json?lang=en",
+    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/account?t=1607180813560",
+    "xhr  GET https://demo.virtocommerce.com/en-US/storefrontapi/cart/itemscount?t=1607180813563",
+    "page load --waiting for new page to load--",
+    "new url https://demo.virtocommerce.com/en-US/camcorders/consumer-camcorders/sony-32gb-hdr-pj540-full-hd-handycam-camcorde",
+    "get ng-click=\"addProductToCart(selectedVariation, 1)"
+  ]
+}

@@ -43,6 +43,9 @@ D.newUser = {
     password: 'Test12345.'
 }
 
+D.product = {
+    name: 'Sony 32GB HDR-PJ540 Full HD Handycam Camcorder with Built-in Projector'
+}
 
 
 module.exports = D;

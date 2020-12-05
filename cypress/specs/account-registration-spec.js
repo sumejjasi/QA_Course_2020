@@ -21,20 +21,6 @@ context('Account Registration....', () => {
             .click_Create_button()
             .verify_validation_message('Passwords are too short.')
 
-        // comment to be pushed to remote repository -
-        // comment to be pushed to remote repository - Amra Požegija Kičin
-        // comment to be pushed to remote repository - Ayman Ali
-        // comment to be pushed to remote repository - Ilhana Halilovic
-        // comment to be pushed to remote repository - Muhamed Kljajić
-        // comment to be pushed to remote repository - Elmedina Sunje
-        // comment to be pushed to remote repository - Amina Senderovic - Kanlic
-        // comment to be pushed to remote repository - Hadis Suvalija
-        // comment to be pushed to remote repository - Maida Detlic
-        // comment to be pushed to remote repository - Vildana Panjeta
-        // comment to be pushed to remote repository - Melisa Žigonja-Peljto
-        // comment to be pushed to remote repository - Dzejlana Colic
-        // comment to be pushed to remote repository - Mariam Felicity Kyebure
-        // comment to be pushed to remote repository - Manal Elmasry Bratic
     })
 
 });
