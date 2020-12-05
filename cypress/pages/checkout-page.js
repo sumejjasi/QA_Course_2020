@@ -31,11 +31,6 @@ export default class CheckoutPage extends BasePage {
         return this;
     }
 
-    select_country_from_dropdown() {
-        countryDropdown().select("string:BIH");
-        return this;
-    }
-
     enter_Shipping_data(shippingData) {
         firstNameInput().type(shippingData.firstName);
         lastNameInput().type(shippingData.lastName);
@@ -43,7 +38,7 @@ export default class CheckoutPage extends BasePage {
         addressInput().type(shippingData.address);
         //apt - optional, I will not enter it
         cityInput().type(shippingData.city);
-        this.select_country_from_dropdown();
+        countryDropdown().select(shippingData.country);
         zipInput().type(shippingData.zipCode);
         //phone - optional, I will not enter it
         return this;
@@ -60,7 +55,6 @@ export default class CheckoutPage extends BasePage {
         radioButton().click();
         return this;
     }
-
 
     get_title() {
         return successfulOrderTitle();

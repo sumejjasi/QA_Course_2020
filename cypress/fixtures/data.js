@@ -40,19 +40,17 @@ D.newUser = {
     lastName : 'TestL',
     username: D.getRandomString(5),
     email: D.getRandomEmail(),
-    password: 'Test12345.'
+    password: 'Test12345.',
+    address: D.getRandomString(5),
+    city: 'Sarajevo',
+    zipCode: '71000',
+    country: 'string:BIH'
+
 }
 
 D.product = {
     name: 'ASUS ZenFone 2 ZE551ML 16GB Smartphone'
 }
 
-D.shippingData = {
-    firstName: 'TestFirst',
-    lastName : 'TestL',
-    address: D.getRandomString(5),
-    city: 'Sarajevo',
-    zipCode: '71000'
-}
 
 module.exports = D;

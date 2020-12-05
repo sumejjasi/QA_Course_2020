@@ -13,7 +13,7 @@ context('Order Product', () => {
             .click_Go_To_Cart_button()
         ui.cart.click_Checkout()
         ui.checkoutPage.enter_email(D.newUser.email)
-            .enter_Shipping_data(D.shippingData)
+            .enter_Shipping_data(D.newUser)
             .click_on_next_step_button()
             .choose_shipping_method()
             .click_on_next_step_button() //payment method - nothing to choose on this site, so we proceed
