@@ -38,7 +38,7 @@ context('Account Registration....', () => {
     })
 
 
-    it.only('Verify message for password that is not containing uppercase letters', function () {
+    it('Verify message for password that is not containing uppercase letters', function () {
 
         D.newUser.password = 'test1234.'
         ui.accountRegistrationPage.navigate_to('https://demo.virtocommerce.com/en-US/account/register')

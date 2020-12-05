@@ -2,11 +2,9 @@ import BasePage from "./base-page";
 
 // *************************** ELEMENTS ***************************
 let
-    usernameInput = e => cy.get('#SpecificElementId'),
-    passwordInput = e => cy.get('.specificElementClass'),
-    addToCart = e => cy.get('#addToCart'),
-    goToCart = e => cy.get('[ng-click="redirect(\'/en-US/cart\')"]')
-// add comma on the previous line before adding new element selectors
+    addToCardButton = e => cy.get('#addToCart'),
+    goToCardButton = e => cy.get('[ng-click="redirect(\'/en-US/cart\')"]')
+ // add comma on the previous line before adding new element selectors
 
 export default class ProductDetailsPage extends BasePage {
 
@@ -16,21 +14,15 @@ export default class ProductDetailsPage extends BasePage {
 
     // *************************** ACTIONS ***************************
 
-    click_add_to_cart_button () {
-        this.wait_element_to_be_enabled(addToCart)
-        addToCart().click();
+    click_Add_To_Cart_button() {
+        this.wait_element_to_be_enabled(addToCardButton)
+        addToCardButton().click()
         return this;
     }
 
-    //verify_labels_upon_successful_add_to_cart () {
-        //this.verify_text_is_visible ('Product is added to cart')
-
-
-
-    click_go_to_cart_button () {
-        this.wait_element_to_be_enabled(goToCart)
-        goToCart().click();
+    click_Go_To_Cart_button() {
+        this.wait_element_to_be_enabled(goToCardButton)
+        goToCardButton().click();
         return this;
     }
 }
-
