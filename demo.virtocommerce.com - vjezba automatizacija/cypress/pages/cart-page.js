@@ -5,7 +5,7 @@ let
     usernameInput = e => cy.get('#SpecificElementId'),
     passwordInput = e => cy.get('.specificElementClass'),
     checkoutButton= e => cy.get('[ng-click="submitCart()"]')
-// add comma on the previous line before adding new element selectors
+ // add comma on the previous line before adding new element selectors
 
 export default class CartPage extends BasePage {
 

@@ -4,7 +4,7 @@ D.uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()
 D.randomNumber = Math.floor(10000 * Math.random() + 1).toString();
 
 D.getUUID = function () {
-    let uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()).toString(16));
+   let uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()).toString(16));
     return uuid;
 };
 
@@ -30,21 +30,21 @@ D.getNewProductData = function(){
 };
 
 D.newUser = {
-    firstName: 'AA',
-    lastName: 'BB',
-    email: D.getRandomString(5) + '@gmail.com',
-    userName: D.getRandomString(5),
-    password: 'Test123.'
+ firstName: 'AA',
+ lastName: 'BB',
+ email: D.getRandomString(5) + '@gmail.com',
+ userName: D.getRandomString(5),
+ password: 'Test123.'
 
 }
 
 D.getRandomEmail = function () {
-    let randomEmail = D.getRandomString(5) + '@gmail.com'
-    return randomEmail;
-};
+     let randomEmail = D.getRandomString(5) + '@gmail.com'
+     return randomEmail;
+ };
 
 D.product = {
-    name: 'DJI Spreading Wings S1000+ Professional Octocopter'
+    name: 'E-flite Carbon-Z Cub BNF Basic'
 }
 
 D.customerInformation = {

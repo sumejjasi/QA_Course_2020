@@ -1,0 +1,10 @@
+node_modules/*
+.idea/*
+package-lock.json
+cypress/logs/*
+cypress/snapshots/*
+report/allure-results/*
+cypress/videos/*
+cypress/screenshots/*
+package-lock.json
+cypress/parallel-weights.json
