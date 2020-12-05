@@ -30,8 +30,8 @@ export default class CheckoutPage extends BasePage {
         return this;
     }
 
-    select_country_from_dropdown() {
-        countryDropdown().select("string:BIH");
+    select_country_from_dropdown(dataObject) {
+        countryDropdown().select(dataObject.country);
         return this;
     }
 
@@ -58,7 +58,6 @@ export default class CheckoutPage extends BasePage {
         radioButton().first().check();
         return this;
     }
-
 
     get_title() {
         return successfulOrderTitle();
