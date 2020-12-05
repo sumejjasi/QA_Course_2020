@@ -12,6 +12,7 @@ context('Order Product', () => {
         ui.productDetails.click_Add_To_Cart_button()
             .click_Go_To_Cart_button()
         ui.cart.click_Checkout()
-
+        ui.customerShippingPage.enter_shipping_address(D.shippingInfo).submit_shipping_address()
+        ui.customerPaymentPage.select_payment_method().submit_payment_method().verify_text_is_visible("All transactions are secure and encrypted. Credit card information is never stored.")
     })
 });

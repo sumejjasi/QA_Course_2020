@@ -1,11 +1,11 @@
 {
-  "specName": "order-product-spec.js",
-  "title": "Verify that user can add product to cart, checkout and complete the order",
-  "suiteName": "Order Product",
+  "specName": "login-spec.js",
+  "title": "Test case title",
+  "suiteName": "Test suite title",
   "testId": "r3",
-  "testName": "Order Product Verify that user can add product to cart, checkout and complete the order",
+  "testName": "Test suite title Test case title",
   "testError": "Timed out after waiting `15000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `15000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `C:\\Users\\esunje\\Documents\\GitHub\\QA_Course_2020\\cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
   "testCommands": [
-    "visit https://demo.virtocommerce.com/"
+    "visit https://admin-demo.virtocommerce.com/#/login"
   ]
 }

@@ -44,9 +44,27 @@ D.newUser = {
 }
 
 D.product = {
-    name: '3DR Solo Quadcopter (No Gimbal)'
+    name: 'Teac Cabasse CineOle Digital Home Cinema Audio System (Glossy Black)'
 }
 
+
+
+D.shippingInfo = {
+
+    email: D.getRandomEmail(),
+    firstName: D.getRandomString(6),
+    lastName: D.getRandomString(6),
+    company: D.getRandomString(6),
+    address: D.getRandomString(6),
+    appartman: D.getRandomString(6),
+    city: "Mostar",
+    country: "Bosnia And Herzegovina",
+    postal: "7100",
+    phone: D.getNewRandomNumber(),
+
+
+
+}
 
 
 module.exports = D;
