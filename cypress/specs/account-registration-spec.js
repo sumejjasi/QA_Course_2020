@@ -47,4 +47,6 @@ context('Account Registration....', () => {
             .verify_validation_message(C.validationMsgs.missingUppercaseInPassword);
     })
 
+    // comment to be pushed to remote repository - branch example-branch
+
 });
