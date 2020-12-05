@@ -15,7 +15,7 @@ let
     nextStepButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
    // radioButton = e => cy.get('[type="radio"]'),
     radioButton = e => cy.get('[id="FixedRate:Ground"]'),
-    successfulOrderTitle = e => cy.get('body > main > div > h4')
+    successfulOrderTitle = e => cy.get('h4')
 
 
 export default class CheckoutPage extends BasePage {
