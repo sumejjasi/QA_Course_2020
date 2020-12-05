@@ -6,3 +6,5 @@ cypress/.DS_Store
 debug.log
 package-lock.json
 .DS_Store
+cypress/logs/failed-order-product-ilhana-spec-r-2-an-uncaught-error-was-detected-outside-of-a-test.json
+cypress/logs/failed-order-product-ilhana-spec-r-3-order-product-verify-that-user-can-add-product-to-the-cart-checkout-and-complete-the-order.json

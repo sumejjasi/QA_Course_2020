@@ -45,6 +45,7 @@ D.newUser = {
 
 D.product = {
     name: '3DR Solo Quadcopter (No Gimbal)'
+
 }
 
 

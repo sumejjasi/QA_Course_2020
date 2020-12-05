@@ -5,6 +5,8 @@ import AccountRegistrationPage from "./account-registration-page";
 import AccountProfilePage from "./account-profile-page";
 import ProductDetailsPage from "./product-details-page";
 import CartPage from "./cart-page";
+import CartIlhanaPage from "./cart-ilhana-page";
+import ProductDetailsIlhanaPage from "./product-details-ilhana-page";
 
 let app = new BasePage();
 let pageTemplate = new PageTemplate();
@@ -13,6 +15,8 @@ let accountRegistrationPage = new AccountRegistrationPage()
 let accountProfile = new AccountProfilePage()
 let productDetails = new ProductDetailsPage()
 let cart = new CartPage()
+let cartIlhana = new CartIlhanaPage()
+let productDetailsIlhana = new ProductDetailsIlhanaPage()
 
 module.exports = {
     app : app,
@@ -22,4 +26,6 @@ module.exports = {
     accountProfile : accountProfile,
     productDetails : productDetails,
     cart : cart,
+    cartIlhana: cartIlhana,
+    productDetailsIlhana : productDetailsIlhana
 }
