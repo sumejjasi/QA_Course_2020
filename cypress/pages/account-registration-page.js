@@ -12,7 +12,7 @@ let
     validationMessageContainer = e => cy.get('.form-error'),
     firstNameInput2 = e => cy.get('#first_name')
  // add comma on the previous line before adding new element selectors
-
+//dodan komentar
 export default class AccountRegistrationPage extends BasePage {
 
     constructor() {
