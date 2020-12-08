@@ -12,7 +12,12 @@ let
     countryInput = e => cy.get('[name="Country"]'),
     postalInput = e => cy.get('[id="PostalCode"]'),
     phoneInput = e => cy.get('[id="Phone"]'),
-    shippingButton = e => cy.get('[name="button"]')
+    shippingButton = e => cy.get('[name="button"]'),
+    radioButton = e => cy.get('[id="FixedRate:Ground"]'),
+    paymentMethodButton = e => cy.get('[ng-click="$ctrl.nextStep()"]'),
+    createOrderButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
+    confirmOrder = e => cy.get('[ORDER CO201208-00009]')
+
 
 
 
@@ -43,4 +48,24 @@ export default class checkoutPageAyman extends BasePage {
         return this;
     }
 
+    checking_radio_button() {
+        radioButton().check()
+        return this;
+    }
+
+    clicking_payment_method_button() {
+        paymentMethodButton().click()
+        return this;
+    }
+
+    clicking_create_order_button() {
+        this.wait_element_to_be_enabled(createOrderButton)
+        createOrderButton().click()
+        return this;
+    }
+
+    confirmOrder() {
+        this.verify_text_is_visible();
+        return this;
+    }
 }
