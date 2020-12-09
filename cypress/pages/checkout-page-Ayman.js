@@ -15,8 +15,7 @@ let
     shippingButton = e => cy.get('[name="button"]'),
     radioButton = e => cy.get('[id="FixedRate:Ground"]'),
     paymentMethodButton = e => cy.get('[ng-click="$ctrl.nextStep()"]'),
-    createOrderButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
-    confirmOrder = e => cy.get('[ORDER CO201208-00009]')
+    createOrderButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]')
 
 
 
@@ -64,8 +63,8 @@ export default class checkoutPageAyman extends BasePage {
         return this;
     }
 
-    confirmOrder() {
-        this.verify_text_is_visible();
+    verify_text_is_visible() {
+    cy.findByText("ORDER CO").should('be.visible')
         return this;
     }
 }

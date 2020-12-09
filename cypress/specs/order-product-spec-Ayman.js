@@ -20,6 +20,6 @@ context('Order product Ayman', () => {
         .checking_radio_button()
         .clicking_payment_method_button()
         .clicking_create_order_button()
-        .confirmOrder('ORDER CO201208-00009')
+        .verify_text_is_visible('ORDER CO')
     })
 });
