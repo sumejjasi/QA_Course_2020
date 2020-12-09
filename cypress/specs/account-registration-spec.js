@@ -13,6 +13,8 @@ context('Account Registration....', () => {
         ui.accountProfile.verify_labels_upon_succesful_registration(D.newUser)
     })
 
+    //dodan komentar
+
     it('Verify validation message for short password', function () {
 
         D.newUser.password = 'Test1'
