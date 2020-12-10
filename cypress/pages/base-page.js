@@ -60,6 +60,11 @@ export default class BasePage {
         return this;
     };
 
+    wait_element_to_be_enabled(element) {
+        element().should('be.enabled');
+        return this;
+    };
+
     wait_all_elements_of_same_type_to_be_visible(elements) {
         elements().then(function (elms) {
             cy.log(`Waiting ${elms.length} elements to be visible`);

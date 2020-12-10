@@ -46,8 +46,10 @@ D.newUser = {
 D.customerInformation = {
     firstName: D.getRandomString(5),
     lastName : D.getRandomString(5),
-    cityName: D.getRandomString(),
+    address : D.getRandomString(5),
+    cityName: D.getRandomString(6),
     postalCode: D.getNewRandomNumber(),
+   // country: ('"string:BIH"'),
 
 }
 

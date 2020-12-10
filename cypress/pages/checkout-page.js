@@ -8,12 +8,14 @@ let
     emailInput = e => cy.get('[id="Email"]'),
     firstNameInput = e => cy.get('[id="FirstName"]'),
     lastNameInput = e => cy.get('[id="LastName"]'),
+    addressInput = e => cy.get('[id="Line1"]'),
     cityNameInput = e => cy.get('[id="City"]'),
     countryNameInput = e => cy.get('[ng-model="$ctrl.address.countryCode"]'),
     postalCodeInput = e => cy.get('[id="PostalCode"]'),
     shippingMethodButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
     fixedRateGroundButton = e => cy.get('[id="FixedRate:Ground"]'),
-    paymentMethodButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]')
+    paymentMethodButton = e => cy.get('[class="step__footer__continue-btn btn ng-scope"]'),
+    successufullOrderTitle = e => cy.get('[ng-controller="orderController"]')
  // add comma on the previous line before adding new element selectors
 
 export default class CheckoutPage extends BasePage {
@@ -29,22 +31,24 @@ export default class CheckoutPage extends BasePage {
 
         return this;
     }
-    enter_valid_customer_information() {
+    enter_valid_customer_information(customerInformation) {
 
-        firstNameInput().type(D.customerInformation.firstName)
-        lastNameInput().type(D.customerInformation.lastName)
-        cityNameInput().type(D.customerInformation.cityName)
-        postalCodeInput().type(D.customerInformation.postalCode)
-
-        return this;
-    }
-
-    click_country_from_dropdown_list() {
-        this.select_country_from_dropdown_list()
-        countryNameInput().select('"string:BIH"')
-
+        firstNameInput().type(customerInformation.firstName);
+        lastNameInput().type(customerInformation.lastName);
+        cityNameInput().type(customerInformation.cityName);
+        addressInput().type(customerInformation.address);
+        countryNameInput().select('string:BIH');
+        postalCodeInput().type(customerInformation.postalCode);
 
         return this;
+
+   // }
+    //select_from_dropdown_list() {
+        //cy.get('select')
+           // .select('Select country').should('have.value', '"string:BIH"');
+
+       // return this;
+
     }
 
     click_shipping_method_button() {
@@ -61,9 +65,9 @@ export default class CheckoutPage extends BasePage {
         return this;
     }
     get_title() {
-        return successufulOrderTitle();
+        return successufullOrderTitle();
     }
-    verify_heading(text) {
-        this.verify_text(successfulOrderTitle, text);
+    verify_subtext_(text) {
+        this.verify_text(successufullOrderTitle, text);
     }
 }
