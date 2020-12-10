@@ -1,8 +1,12 @@
 let C = exports;
 
 
-C.labels = {
 
+C.labels = {
+    successfulOrder: {
+        order: 'Order CO'
+
+}
 }
 
 

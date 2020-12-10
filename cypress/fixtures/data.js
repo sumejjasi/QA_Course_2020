@@ -43,6 +43,19 @@ D.newUser = {
     password: 'Test12345.'
 }
 
+D.customerInformation = {
+    firstName: D.getRandomString(5),
+    lastName : D.getRandomString(5),
+    cityName: D.getRandomString(),
+    postalCode: D.getNewRandomNumber(),
+
+}
+
+D.product = {
+    name: 'Panasonic HC-VX870K 4K Ultra HD Camcorder',
+
+}
+
 
 
 module.exports = D;

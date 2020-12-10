@@ -1,0 +1,9 @@
+{
+  "specName": "order-product-spec.js",
+  "title": "Verify that user can add product to the cart, checkout and complete the order",
+  "suiteName": "Order product",
+  "testId": "r3",
+  "testName": "Order product Verify that user can add product to the cart, checkout and complete the order",
+  "testError": "D is not defined",
+  "testCommands": []
+}
