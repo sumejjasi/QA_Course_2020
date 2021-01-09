@@ -1,0 +1,16 @@
+{
+  "specName": "test-with-api-spec.js",
+  "title": "Deleting books through the API",
+  "suiteName": "API requests",
+  "testId": "r3",
+  "testName": "API requests Deleting books through the API",
+  "testError": "`cy.request()` timed out waiting `15000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: POST\nURL: https://demoqa.com/Bookstore/v1/Books\n\nNo response was received within the timeout.",
+  "testCommands": [
+    "request ",
+    "task log, Logging in through the API",
+    "task log, Deleting all books from the collection via the API",
+    "request ",
+    "task log, Adding book with id undefined to the collection via the API, for user with ID undefined",
+    "request "
+  ]
+}

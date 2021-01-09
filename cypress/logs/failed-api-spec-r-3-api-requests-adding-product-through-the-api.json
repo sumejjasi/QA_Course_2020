@@ -1,0 +1,18 @@
+{
+  "specName": "api-spec.js",
+  "title": "Adding product through the API",
+  "suiteName": "API requests",
+  "testId": "r3",
+  "testName": "API requests Adding product through the API",
+  "testError": "`cy.request()` failed on:\n\nhttps://demoqa.com/Bookstore/v1/Books?UserId=ab1b428a-00fb-4a49-9504-cef28b6896a6\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: DELETE\nURL: https://demoqa.com/Bookstore/v1/Books?UserId=ab1b428a-00fb-4a49-9504-cef28b6896a6\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"Content-Type\": \"application/json\",\n  \"authorization\": \"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InN1bWVqamEiLCJwYXNzd29yZCI6IlRlc3QxMjMhIiwiaWF0IjoxNjEwMjA0MzI0fQ.pk7m_DJM5n2dBFe5Gpn40QWQZVMn1qj5KmzuOZLizuk\",\n  \"user-agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 0\n}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"server\": \"nginx/1.17.10 (Ubuntu)\",\n  \"date\": \"Sat, 09 Jan 2021 14:58:44 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"48\",\n  \"connection\": \"keep-alive\",\n  \"x-powered-by\": \"Express\",\n  \"etag\": \"W/\\\"30-V67npMN18Zy3bnk1xW2xtLGgx8c\\\"\"\n}\nBody: {\n  \"code\": \"1200\",\n  \"message\": \"User not authorized!\"\n}\n",
+  "testCommands": [
+    "task log,                                                                                                 ",
+    "task log,                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "task log,                Adding product through the API",
+    "task log,                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "task log,                                                                                                 ",
+    "request ",
+    "task log, Logging in through the API",
+    "request "
+  ]
+}

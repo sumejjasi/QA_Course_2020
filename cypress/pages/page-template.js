@@ -4,8 +4,7 @@ import BasePage from "./base-page";
 let
     usernameInput = e => cy.get('#SpecificElementId'),
     passwordInput = e => cy.get('.specificElementClass'),
-    testField = e => cy.get('[attributeName="attributeValue"]')
- // add comma on the previous line before adding new element selectors
+    testField = e => cy.get('[attributeName="attributeValue"]');
 
 export default class TemplatePage extends BasePage {
 

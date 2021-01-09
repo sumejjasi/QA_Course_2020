@@ -16,7 +16,6 @@
  * @type {Cypress.PluginConfig}
  */
 
-const S = require('../fixtures/settings');
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 const imaps = require('imap-simple');
 
@@ -30,21 +29,6 @@ module.exports = (on, config) => {
 
     addMatchImageSnapshotPlugin(on, config);
 
-    on('before:browser:launch', (browser = {}, launchOptions) => {
-
-        if (browser.name === 'chrome') {
-            launchOptions.args.push('--disable-dev-shm-usage');
-            launchOptions.args.push('--window-size=' + S.getSelectedResolution().width.toString() + ',' + S.getSelectedResolution().height.toString());
-            return launchOptions
-        } else if (browser.name === 'electron') {
-            launchOptions.preferences.width = S.getSelectedResolution().width;
-            launchOptions.preferences.height = S.getSelectedResolution().height;
-            launchOptions.preferences.frame = false;
-            launchOptions.preferences.useContentSize = true;
-            launchOptions.preferences.resizable = false;
-            return launchOptions
-        }
-    });
 
     on('task', {
 

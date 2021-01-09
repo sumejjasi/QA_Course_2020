@@ -1,5 +1,18 @@
 let D = exports;
 
+D.user = {
+    username: 'sumejja',
+    password: 'Test123!',
+    id: 'e5820cfa-a138-46d1-b932-0ca18f473efe'
+}
+
+D.books = {
+    programmingJS: {
+        title: 'Programming JavaScript Applications',
+        id: '9781491950296'
+    }
+}
+
 D.uuid = "uuid-"+((new Date).getTime().toString(16)+Math.floor(1E7*Math.random()).toString(16));
 D.randomNumber = Math.floor(10000 * Math.random() + 1).toString();
 
@@ -22,35 +35,11 @@ D.getNewRandomNumber = function () {
     return randomNo;
 };
 
-D.getRandomEmail = function () {
-    let randomEmail = D.getRandomString(5) + '@gmail.com'
-    return randomEmail;
-};
-
 D.getNewProductData = function(){
     return D.newProduct = {
         SKU : D.getRandomString(10),
         name: 'product_' + D.getNewRandomNumber()
     }
 };
-
-// object with properties
-D.newUser = {
-    firstName: 'TestFirst',
-    lastName : 'TestL',
-    username: D.getRandomString(5),
-    email: D.getRandomEmail(),
-    password: 'Test12345.',
-    address: D.getRandomString(5),
-    city: 'Sarajevo',
-    zipCode: '71000',
-    country: 'string:BIH'
-
-}
-
-D.product = {
-    name: 'ASUS ZenFone 2 ZE551ML 16GB Smartphone'
-}
-
 
 module.exports = D;

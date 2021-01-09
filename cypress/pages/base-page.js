@@ -1,6 +1,11 @@
 import '@testing-library/cypress/add-commands';
 // *************************** ELEMENTS ***************************
 
+let
+    validationMessage = e => cy.get('.form-error'),
+    uploadFileInput = e => cy.get('input[type=file]'),
+    searchInput = e => cy.findAllByPlaceholderText('Search all products...').eq(0)
+
 export default class BasePage {
 
     constructor() {
@@ -15,33 +20,18 @@ export default class BasePage {
         return this;
     }
 
+    reload_page() {
+        cy.reload();
+        return this;
+    };
+
     click_element_with_placeholder(placeholderText) {
         cy.findAllByPlaceholderText(placeholderText).eq(0).click();
         return this;
     }
 
-    verify_element_is_selected(element) {
-        element().should('be.checked');
-        return this;
-    }
-
-    verify_element_is_visible(element) {
-        element().should('not.be.visible');
-        return this;
-    }
-
-    verify_element_is_not_visible(element) {
-        element().should('be.visible');
-        return this;
-    }
-
     verify_text_is_visible(text) {
         cy.findByText(text).should('be.visible');
-        return this;
-    }
-
-     verify_subtext_is_visible(element, subtext) {
-        element.should('contain', subtext);
         return this;
     }
 
@@ -57,11 +47,6 @@ export default class BasePage {
 
     wait_element_to_be_visible(element) {
         element().should('be.visible');
-        return this;
-    };
-
-    wait_element_to_be_enabled(element) {
-        element().should('be.enabled');
         return this;
     };
 
@@ -81,6 +66,20 @@ export default class BasePage {
         return this;
     };
 
+    verify_validation_message(msg) {
+        validationMessage().should('contain', msg);
+        return this;
+    }
+
+    execute_search_for(searchCriteria) {
+        searchInput().click();
+        searchInput().should('be.enabled');
+        searchInput().type(searchCriteria, { delay:70}).should('have.value', searchCriteria);
+        searchInput().type('{enter}');
+
+
+        return this;
+    }
 
     log_title(test) {
         cy.log('                                                                                                ');

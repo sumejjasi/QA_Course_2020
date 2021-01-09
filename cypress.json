@@ -7,7 +7,7 @@
   "pageLoadTimeout": 15000,
   "video": true,
   "viewportHeight": 900,
-  "baseUrl": "https://demo.virtocommerce.com/",
+  "baseUrl": "https://demoqa.com/",
   "env" : {
     "allureResultsPath": "report/allure-results",
     "allure": true
