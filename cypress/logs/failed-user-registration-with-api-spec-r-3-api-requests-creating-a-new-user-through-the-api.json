@@ -1,0 +1,9 @@
+{
+  "specName": "user-registration-with-api-spec.js",
+  "title": "Creating a new user through the API",
+  "suiteName": "API requests",
+  "testId": "r3",
+  "testName": "API requests Creating a new user through the API",
+  "testError": "S is not defined",
+  "testCommands": []
+}

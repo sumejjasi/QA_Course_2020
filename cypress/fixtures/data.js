@@ -42,4 +42,10 @@ D.getNewProductData = function(){
     }
 };
 
+D.newUser = {
+    username: D.getRandomString(7),
+    password: 'Test123!',
+}
+
+
 module.exports = D;
